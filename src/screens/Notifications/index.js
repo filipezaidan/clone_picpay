@@ -1,8 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
 
 export default function Notifications() {
  return (
-   <View/>
+  <SafeAreaView>
+    <Text>Notifications</Text>
+  </SafeAreaView>
   );
 }

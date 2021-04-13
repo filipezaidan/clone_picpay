@@ -8,14 +8,25 @@ import Notifications from '../screens/Notifications';
 import Pay from '../screens/Pay';
 import Wallet from '../screens/Wallet';
 import Settings from '../screens/Settings';
+import PayButton from '../components/PayButton';
 
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
  return (
    <Tab.Navigator
-    screenOptions={ ({ route }) => ({
-        tabBarIcon: ({ color, size }) => {
+    screenOptions={ ({ route, navigation }) => ({
+        tabBarIcon: ({ color, size, focused }) => {
+
+            if(route.name === 'Pay'){
+                return( 
+                    <PayButton
+                        onPress={ () => navigation.navigate('Pay')}
+                        focused={focused}
+                    />
+                );
+            }
+
             const { lib: Icon, name } = TabIcons[route.name];
             return <Icon name={name} size={size} color={color}/>
         },
@@ -24,7 +35,9 @@ export default function Routes() {
         style: {
             backgroundColor: '#131418',
             borderTopColor: 'rgba(255,255,255,0.2)'
-        }
+        },
+        activeTintColor: '#fff',
+        inactiveTintColor: '#92929c'
     }}    
    >
        <Tab.Screen 
@@ -48,7 +61,7 @@ export default function Routes() {
         name="Pay" 
         component={Pay}
         options={{
-            title: "Pagar",
+            title: "",
         }}
        />
 

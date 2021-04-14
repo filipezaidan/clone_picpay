@@ -34,10 +34,14 @@ export default function Routes() {
     tabBarOptions={{
         style: {
             backgroundColor: '#131418',
-            borderTopColor: 'rgba(255,255,255,0.2)'
+            borderTopColor: 'rgba(255,255,255,0.2)',
+        },
+        labelStyle:{
+            paddingBottom: 5
         },
         activeTintColor: '#fff',
-        inactiveTintColor: '#92929c'
+        inactiveTintColor: '#92929c',
+        
     }}    
    >
        <Tab.Screen 

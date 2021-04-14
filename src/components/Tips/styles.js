@@ -17,6 +17,7 @@ export const Option = styled.TouchableOpacity`
     height: 200px;
     border-radius: 8px;
     padding: 15px;
+    justify-content: space-between;
     margin-right: 16px;
 `;
 
@@ -27,5 +28,5 @@ export const Title = styled.Text`
 `;
 
 export const Img = styled.Image`
-    align-items: center;
+    align-self: center;
 `;

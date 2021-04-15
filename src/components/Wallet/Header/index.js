@@ -39,13 +39,13 @@ export default function Header() {
 
         <Actions>
           <Action>
-            <MaterialCommunityIcons name="cash" size={30} color="#fff"/>
+            <MaterialCommunityIcons name="cash" size={40} color="#fff"/>
             <ActionLabel>Adicionar</ActionLabel>
           </Action>
 
           <Action>
             <MaterialCommunityIcons name="bank" size={30} color="#fff"/>
-            <ActionLabel>Adicionar</ActionLabel>
+            <ActionLabel>Retirar</ActionLabel>
           </Action>
         </Actions>
 

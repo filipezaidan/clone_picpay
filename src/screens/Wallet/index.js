@@ -1,8 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import Header from '../../components/Wallet/Header';
+
+import { Wrapper } from './styles';
 
 export default function Wallet() {
  return (
-   <View/>
+   <Wrapper>
+     <Header/>
+   </Wrapper>
   );
 }

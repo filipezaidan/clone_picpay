@@ -31,7 +31,7 @@ export default function Activities() {
 
        <Card>
            <CardHeader>
-               <Avatar source={require('../../assets/img/08.png')}/>
+               <Avatar source={require('../../../assets/img/08.png')}/>
                <Description>
                    <Bold>Você</Bold> pagou a <Bold>@filipezaidan</Bold>
                </Description>

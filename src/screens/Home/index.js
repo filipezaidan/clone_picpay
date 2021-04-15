@@ -1,11 +1,11 @@
 import React from 'react';
 import { Wrapper, Container } from './styles';
 
-import Header from '../../components/Header';
-import Suggestions from '../../components/Suggestions';
-import Activities from '../../components/Activities';
-import Tips from '../../components/Tips';
-import Banner from '../../components/Banner';
+import Header from '../../components/Home/Header';
+import Suggestions from '../../components/Home/Suggestions';
+import Activities from '../../components/Home/Activities';
+import Tips from '../../components/Home/Tips';
+import Banner from '../../components/Home/Banner';
 
 export default function Home() {
  return (

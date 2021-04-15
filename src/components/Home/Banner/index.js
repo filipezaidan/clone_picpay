@@ -12,7 +12,7 @@ export default function Banner() {
         </Description>
       </Details>
 
-      <Img source={require("../../assets/img/13.png")}/>
+      <Img source={require("../../../assets/img/13.png")}/>
    </Container>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 
 import { Wrapper } from './styles';
 
@@ -9,10 +9,21 @@ import Card from '../../components/Wallet/Card';
 import Ticket from '../../components/Wallet/Ticket';
 
 export default function Wallet() {
- return (
+  const [isVisible, setIsVisible] = useState(true);
+  const [useBalance, setUseBalance] = useState(true);
+  
+  function handleToggleVisibility(value){
+    setIsVisible(!value);
+  }
+
+  function handleToggleUseBalance(value){
+    setUseBalance(!value);
+  }
+
+  return (
    <Wrapper>
-     <Header/>
-     <Balance/>
+     <Header value={isVisible} onChangeVisibility={handleToggleVisibility} valueBalance={useBalance}/>
+     <Balance value={useBalance} onChangeUseBalance={handleToggleUseBalance}/>
      <Payment/>
      <Card/>
      <Ticket/>

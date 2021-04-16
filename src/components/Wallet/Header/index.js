@@ -16,19 +16,20 @@ import {
   ActionLabel
 } from './styles';
 
-export default function Header() {
+export default function Header({ value, onChangeVisibility, valueBalance}) {
+
   return (
-    <Container colors={["#52e78c", "#1ab563"]}>
+    <Container colors={valueBalance ? ["#52e78c", "#1ab563"] : ["#d3d3d3", "#868686"]}>
       <HeaderContainer>
         <Title>Saldo Picpay</Title>
 
         <BalanceContainer>
           <Value>
-            R$ <Bold>0,00</Bold>
+            R$ <Bold>{value ? '0,00' : '----'}</Bold>
           </Value>
 
-          <EyeButton>
-            <Feather name="eye" size={28} color="#fff"/>
+          <EyeButton onPress={ () => onChangeVisibility(value)}>
+            <Feather name={value ? "eye" : 'eye-off'} size={28} color="#fff"/>
           </EyeButton>
 
         </BalanceContainer>

@@ -3,11 +3,11 @@ import { Switch } from 'react-native';
 
 import { BalanceContainer, BalanceTitle } from './styles';
 
-export default function Balance() {
+export default function Balance({ value, onChangeUseBalance }) {
  return ( 
     <BalanceContainer>
         <BalanceTitle>Usar saldo ao pagar</BalanceTitle>
-        <Switch/>
+        <Switch value={value} onValueChange={() => onChangeUseBalance(value)}/>
     </BalanceContainer>
   );
 }

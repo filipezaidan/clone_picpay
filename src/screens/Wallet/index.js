@@ -6,6 +6,7 @@ import Balance from '../../components/Wallet/Balance';
 import Header from '../../components/Wallet/Header';
 import Payment from '../../components/Wallet/Payment';
 import Card from '../../components/Wallet/Card';
+import Ticket from '../../components/Wallet/Ticket';
 
 export default function Wallet() {
  return (
@@ -14,6 +15,7 @@ export default function Wallet() {
      <Balance/>
      <Payment/>
      <Card/>
+     <Ticket/>
    </Wrapper>
   );
 }

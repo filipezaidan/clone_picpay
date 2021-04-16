@@ -6,7 +6,6 @@ export const CardContainer = styled.View`
     margin: 0 16px;
     border-radius: 8px;
     margin-top: 10px;
-
 `;
 
 export const CardBody = styled.View`
@@ -23,11 +22,9 @@ export const CardTitle = styled.Text`
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-
 `;
 
 export const CardInfo = styled.Text`
-
     font-size: 14px;
     color: rgba(255,255,255,0.8);
     margin-top: 15px;
@@ -42,7 +39,6 @@ export const AddButton = styled.TouchableOpacity`
     flex-direction: row;
     align-items: center;
     margin-top: 25px;
-
 `;
 
 export const AddLabel = styled.Text`
@@ -50,5 +46,4 @@ export const AddLabel = styled.Text`
     font-size: 18px;
     font-weight: bold;
     margin-left: 15px;
-
 `;
